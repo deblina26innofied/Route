@@ -1,0 +1,22 @@
+<div class="wrapper" ng-app="detailsApp">
+    <!--wrapper div starts-->
+    <div class="nav-bar">
+        <!--left pannel starts-->
+        <img src="logo.png" alt="logo">
+        <ul class="menu">
+            <li ui-sref="loggedin.form">Add Employee</li>
+            <li ui-sref="loggedin.viewDetails">View Details</li>
+        </ul>
+    </div>
+    <!--left pannel ends-->
+    <div class="right-panel">
+        <!--right panel starts-->
+        <div class="header">
+            <button ng-click="logout()">Logout</button>
+        </div>
+        <div class="view-window" ui-view>
+        </div>
+    </div>
+    <!--right panel ends-->
+</div>
+<!--wrapper div ends-->

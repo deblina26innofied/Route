@@ -1,0 +1,11 @@
+<div ng-controller="listControl">
+    <ul>
+        <li ui-sref="userInfo" ng-repeat="emp in listEmployee">
+            <p>ID:<span ng-bind="emp.id"></span>
+            </p>
+            <p>
+                NAME:<span ng-bind="emp.name"></span>
+            </p>
+        </li>
+    </ul>
+</div>
